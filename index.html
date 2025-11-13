@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario de Registro Sencillo</title>
+    <style>
+      /* El CSS va aquí por ahora, o en un archivo styles.css */
+    </style>
+  </head>
+  <body>
+    <section class="seccion-formulario">
+      <div class="div-cont-formulario">
+        <h1>Formulario de Registro</h1>
+        <p>Complete todos los campos</p>
+
+        <form action="/ruta-de-envio" method="post" class="formulario">
+          <div class="campo">
+            <label for="nombre">Nombre Completo:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese su nombre"
+            />
+          </div>
+
+          <div class="campo">
+            <label for="pais">País:</label>
+            <select id="pais" name="pais">
+              <option value="">Seleccione un país</option>
+              <option value="peru">Perú</option>
+              <option value="mexico">México</option>
+              <option value="colombia">Colombia</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <p>Intereses:</p>
+            <ul class="lista-checkbox">
+              <li>
+                <input
+                  type="checkbox"
+                  id="edu"
+                  name="intereses"
+                  value="educacion"
+                /><label for="edu">Educacion</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="fin"
+                  name="intereses"
+                  value="finanzas"
+                /><label for="fin">Finanzas</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="ing"
+                  name="intereses"
+                  value="ingenieria"
+                /><label for="ing">Ingeniería</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="lit"
+                  name="intereses"
+                  value="literatura"
+                /><label for="lit">Literatura</label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="campo">
+            <p>Sexo:</p>
+            <ul class="lista-radio">
+              <li>
+                <input
+                  type="radio"
+                  id="masc"
+                  name="sexo"
+                  value="masculino"
+                /><label for="masc">Masculino</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="fem"
+                  name="sexo"
+                  value="femenino"
+                /><label for="fem">Femenino</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  id="no-decir"
+                  name="sexo"
+                  value="no-decir"
+                  checked
+                /><label for="no-decir">Prefiero no decirlo</label>
+              </li>
+            </ul>
+          </div>
+
+          <div style="text-align: center; margin-top: 20px">
+            <input type="submit" value="Enviar" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
