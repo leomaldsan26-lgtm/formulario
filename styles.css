@@ -5,7 +5,7 @@
   --card-bg: #1e1e1e;
   --text-light: #ffffff;
   --text-gray: #b3b3b3;
-  --border-radius: 12px; /* Vuelto a esquinas redondeadas y modernas */
+  --border-radius: 12px;
   --transition: all 0.3s ease;
 }
 
@@ -55,8 +55,8 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 0; /* Eliminado el padding del recuadro de boceto */
-  border: none; /* Eliminado el borde de boceto */
+  padding: 0; /
+  border: none; /
 }
 
 .logo i {
@@ -84,16 +84,15 @@ a:hover {
   gap: 10px;
 }
 
-/* Botones Interactivos - Diseño Moderno (Horizontalidad respetada) */
 .nav-button {
   display: flex;
   align-items: center;
   gap: 8px;
   background: transparent;
   color: var(--text-light);
-  border: none; /* Eliminado el borde de boceto */
+  border: none; 
   padding: 10px 15px;
-  border-radius: 20px; /* Esquinas redondeadas */
+  border-radius: 20px; 
   cursor: pointer;
   transition: var(--transition);
   font-weight: 500;
@@ -134,7 +133,7 @@ a:hover {
   margin: 0 auto;
 }
 
-/* SECCIÓN DESCRIPCIÓN Y VIDEO (Horizontalidad respetada) */
+
 .content-section {
   display: flex;
   justify-content: space-between;
@@ -146,9 +145,9 @@ a:hover {
 .video-container {
   width: 50%;
   padding: 25px;
-  border: none; /* Eliminado el borde de boceto */
+  border: none; 
   background-color: var(--card-bg);
-  border-radius: var(--border-radius); /* Esquinas redondeadas */
+  border-radius: var(--border-radius);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
