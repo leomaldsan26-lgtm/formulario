@@ -1,172 +1,250 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>🎶 Apple Music - Acceso</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css"> 
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div id="login-view" class="login-container">
-        <div class="login-box">
-            <h2>Acceso a Apple Music</h2>
-            <div style="margin-bottom: 20px;">
-                <i class="fab fa-apple fa-3x" style="color: #2575fc;"></i>
-            </div>
-            <form id="login-form">
-                <div class="input-group">
-                    <label for="username">Usuario:</label>
-                    <input type="text" id="username" placeholder="Ingrese su usuario" required>
-                </div>
-                <div class="input-group">
-                    <label for="password">Contraseña:</label>
-                    <input type="password" id="password" placeholder="Ingrese su contraseña" required>
-                </div>
-                <button type="submit" class="login-button">Iniciar Sesión</button>
-            </form>
+      <div class="login-box">
+        <h2>Acceso a Apple Music</h2>
+        <div style="margin-bottom: 20px">
+          <i class="fab fa-apple fa-3x" style="color: #2575fc"></i>
         </div>
+        <form id="login-form">
+          <div class="input-group">
+            <label for="username">Usuario:</label>
+            <input
+              type="text"
+              id="username"
+              placeholder="Ingrese su usuario"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="password">Contraseña:</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Ingrese su contraseña"
+              required
+            />
+          </div>
+          <button type="submit" class="login-button">Iniciar Sesión</button>
+        </form>
+      </div>
     </div>
 
     <div id="main-app-view">
-        <header class="header">
-            <div class="logo-and-toggle-container">
-                <div class="logo">
-                    <i class="fab fa-apple"></i>
-                    <span class="logo-text">Music</span>
-                </div>
-                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
-                    <i class="fas fa-bars"></i>
-                </button>
+      <header class="header">
+        <div class="logo-and-toggle-container">
+          <div class="logo">
+            <i class="fab fa-apple"></i>
+            <span class="logo-text">Music</span>
+          </div>
+          <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <nav class="top-nav">
+          <div id="nav-links-menu" class="Menu-Horizontal">
+            <button class="nav-button active">
+              <i class="fas fa-home"></i> Inicio
+            </button>
+            <button class="nav-button">
+              <i class="fas fa-search"></i> Explorar
+            </button>
+            <button class="nav-button">
+              <i class="fas fa-compact-disc"></i> Radio
+            </button>
+            <button class="nav-button">
+              <i class="fas fa-users"></i> Mi Música
+            </button>
+          </div>
+          <button class="cta-button">Suscribirse</button>
+        </nav>
+      </header>
+
+      <main class="main-container">
+        <section class="content-section">
+          <div class="app-description-container">
+            <h2>Una Descripción de la Aplicación</h2>
+            <p>
+              Sumérgete en un catálogo de millones de canciones, listas de
+              reproducción seleccionadas por expertos y estaciones de radio en
+              vivo. Disfruta de **audio espacial con Dolby Atmos** y calidad
+              Lossless para experimentar el sonido en su máxima expresión. Apple
+              Music es tu puerta de entrada al universo sonoro que siempre has
+              querido.
+            </p>
+            <p>
+              🎧 **Audio Espacial:** Sumérgete con Dolby Atmos. 🎵 **Calidad
+              Lossless:** Escucha cada nota como fue grabada.
+            </p>
+          </div>
+
+          <div class="video-container">
+            <h3>Insertar un Video con Link</h3>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Cqxr8mu1eAY?si=W297PvGeCY760ecW"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <p style="margin-top: 10px; color: var(--text-gray)"></p>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="registration-form-section">
+          <h1 class="form-title">Formulario de Registro</h1>
+          <p>Complete todos los campos</p>
+
+          <form class="registration-form">
+            <div class="form-group">
+              <label for="nombre">Nombre Completo:</label>
+              <input type="text" id="nombre" placeholder="Ingrese su nombre" />
             </div>
-            
-            <nav class="top-nav">
-                <div id="nav-links-menu" class="Menu-Horizontal">
-                    <button class="nav-button active"><i class="fas fa-home"></i> Inicio</button>
-                    <button class="nav-button"><i class="fas fa-search"></i> Explorar</button>
-                    <button class="nav-button"><i class="fas fa-compact-disc"></i> Radio</button>
-                    <button class="nav-button"><i class="fas fa-users"></i> Mi Música</button>
-                </div>
-                <button class="cta-button">Suscribirse</button>
-            </nav>
-        </header>
 
-        <main class="main-container">
-            <section class="content-section">
-                <div class="app-description-container">
-                    <h2>Una Descripción de la Aplicación</h2>
-                    <p>
-                        Sumérgete en un catálogo de millones de canciones, listas de reproducción seleccionadas por expertos y estaciones de radio en vivo. Disfruta de **audio espacial con Dolby Atmos** y calidad Lossless para experimentar el sonido en su máxima expresión. Apple Music es tu puerta de entrada al universo sonoro que siempre has querido.
-                    </p>
-                    <p>
-                        🎧 **Audio Espacial:** Sumérgete con Dolby Atmos.
-                        🎵 **Calidad Lossless:** Escucha cada nota como fue grabada.
-                    </p>
-                </div>
-                
-                <div class="video-container">
-                    <h3>Insertar un Video con Link</h3>
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/gq3e3r_fO4M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p style="margin-top: 10px; color: var(--text-gray);">Ejemplo de un video promocional de Apple Music.</p>
-                </div>
-            </section>
-
-            <hr>
-
-            <section class="registration-form-section">
-                <h1 class="form-title">Formulario de Registro</h1>
-                <p>Complete todos los campos</p>
-                
-                <form class="registration-form">
-                    <div class="form-group">
-                        <label for="nombre">Nombre Completo:</label>
-                        <input type="text" id="nombre" placeholder="Ingrese su nombre">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="pais">País:</label>
-                        <select id="pais">
-                            <option>Seleccione un país</option>
-                            <option value="peru">Perú</option>
-                            <option value="mexico">México</option>
-                            <option value="espana">España</option>
-                        </select>
-                    </div>
-
-                    <div class="interests-group form-group">
-                        <label>Intereses:</label>
-                        <ul>
-                            <li><input type="checkbox" id="educacion"><label for="educacion">Educacion</label></li>
-                            <li><input type="checkbox" id="finanzas"><label for="finanzas">Finanzas</label></li>
-                            <li><input type="checkbox" id="ingenieria"><label for="ingenieria">Ingenieria</label></li>
-                            <li><input type="checkbox" id="literatura"><label for="literatura">Literatura</label></li>
-                        </ul>
-                    </div>
-
-                    <div class="gender-group form-group">
-                        <label>Sexo:</label>
-                        <ul>
-                            <li><input type="radio" id="masculino" name="sexo" value="M"><label for="masculino">Masculino</label></li>
-                            <li><input type="radio" id="femenino" name="sexo" value="F" checked><label for="femenino">Femenino</label></li>
-                            <li><input type="radio" id="nodecirlo" name="sexo" value="N/A"><label for="nodecirlo">Prefiero no decirlo</label></li>
-                        </ul>
-                    </div>
-                    
-                    <div class="submit-group">
-                        <button type="submit" class="submit-button">Enviar</button>
-                    </div>
-                </form>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="footer-content">
-                <p>PIE DE PÁGINA DONDE PUEDE IR LOGO DE SUS REDES SOCIALES DEL APLICATIVO Y TU RELLENALO</p>
-                <div class="social-media-icons">
-                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                </div>
-                <p class="footer-info">© 2025 Apple Inc. Todos los derechos reservados. Música sin límites.</p>
+            <div class="form-group">
+              <label for="pais">País:</label>
+              <select id="pais">
+                <option>Seleccione un país</option>
+                <option value="peru">Perú</option>
+                <option value="mexico">México</option>
+                <option value="espana">España</option>
+              </select>
             </div>
-        </footer>
+
+            <div class="interests-group form-group">
+              <label>Intereses:</label>
+              <ul>
+                <li>
+                  <input type="checkbox" id="educacion" /><label for="educacion"
+                    >Educacion</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="finanzas" /><label for="finanzas"
+                    >Finanzas</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="ingenieria" /><label
+                    for="ingenieria"
+                    >Ingenieria</label
+                  >
+                </li>
+                <li>
+                  <input type="checkbox" id="literatura" /><label
+                    for="literatura"
+                    >Literatura</label
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="gender-group form-group">
+              <label>Sexo:</label>
+              <ul>
+                <li>
+                  <input
+                    type="radio"
+                    id="masculino"
+                    name="sexo"
+                    value="M"
+                  /><label for="masculino">Masculino</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="femenino"
+                    name="sexo"
+                    value="F"
+                    checked
+                  /><label for="femenino">Femenino</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="nodecirlo"
+                    name="sexo"
+                    value="N/A"
+                  /><label for="nodecirlo">Prefiero no decirlo</label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="submit-group">
+              <button type="submit" class="submit-button">Enviar</button>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-content">
+          <p></p>
+          <div class="social-media-icons">
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+          <p class="footer-info">
+            © 2025 Apple Inc. Todos los derechos reservados. Música sin límites.
+          </p>
+        </div>
+      </footer>
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const loginForm = document.getElementById('login-form');
-            const loginView = document.getElementById('login-view');
-            const mainAppView = document.getElementById('main-app-view');
-            const menuToggle = document.getElementById('menu-toggle');
-            const navLinksMenu = document.getElementById('nav-links-menu');
+      document.addEventListener("DOMContentLoaded", () => {
+        const loginForm = document.getElementById("login-form");
+        const loginView = document.getElementById("login-view");
+        const mainAppView = document.getElementById("main-app-view");
 
-            if (loginForm) {
-                loginForm.addEventListener('submit', (e) => {
-                    e.preventDefault(); 
-                    
-                    const username = document.getElementById('username').value;
-                    const password = document.getElementById('password').value;
+        if (loginForm) {
+          loginForm.addEventListener("submit", (e) => {
+            e.preventDefault();
 
-                    if (username && password) {
-                        loginView.style.display = 'none';
-                        mainAppView.style.display = 'flex'; 
-                        document.body.style.margin = '0';
-                        document.body.style.padding = '0';
-                        document.body.style.backgroundColor = 'var(--dark-bg)';
-                    } else {
-                        console.error('Por favor, ingrese usuario y contraseña.');
-                    }
-                });
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username && password) {
+              loginView.style.display = "none";
+              mainAppView.style.display = "flex";
+              document.body.style.margin = "0";
+              document.body.style.padding = "0";
+              document.body.style.backgroundColor = "var(--dark-bg)";
+            } else {
+              console.error("Por favor, ingrese usuario y contraseña.");
             }
+          });
+        }
 
-            if (menuToggle && navLinksMenu) {
-                menuToggle.addEventListener('click', () => {
-                    navLinksMenu.classList.toggle('active');
-                });
-            }
-        });
+        const btn = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".Menu-Horizontal");
+
+        if (btn && menu) {
+          btn.addEventListener("click", () => {
+            menu.classList.toggle("active");
+          });
+        }
+      });
     </script>
-</body>
+  </body>
 </html>
